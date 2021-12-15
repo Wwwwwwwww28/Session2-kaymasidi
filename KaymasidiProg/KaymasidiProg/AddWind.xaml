@@ -1,0 +1,32 @@
+﻿<Window x:Class="KaymasidiProg.AddWind"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KaymasidiProg"
+        mc:Ignorable="d"
+        Title="Лопушок" Height="300" Width="550" FontFamily="Gabriola" FontSize="20">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Background="#CEFFF9">
+                    <TextBlock Width="150" Height=" 30" Text="Тип продукта" Margin="10"></TextBlock>
+                    <TextBlock Width="150" Height=" 30" Text="Наименование продукта" Margin="10"></TextBlock>
+                    <TextBlock Width="150" Height=" 30" Text="Минимальная цена" Margin="10"></TextBlock>
+                <TextBlock Width="150" Height=" 30" Text="Артикул" Margin="10"></TextBlock>
+                <Button Background="#00CC76" Width="100" Height="40" HorizontalAlignment="Left" Margin="10" Content="Вернуться" Click="Button_Click"></Button>
+            </StackPanel>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+                <ComboBox Name="ComBTipe"   Width="350" Height=" 30"  Margin="10" SelectionChanged="ComBTipe_SelectionChanged"></ComboBox>
+                    <TextBox Name="tbName" Width="350" Height=" 30"  Margin="10"></TextBox>
+                    <TextBox Name="tbPrice" Width="350" Height=" 30"  Margin="10"></TextBox>
+                <TextBox Name="tbArt" Width="350" Height=" 30"  Margin="10"></TextBox>
+                <Grid>
+                    <Image Source="C:\Users\Administrator\source\repos\KaymasidiProg\KaymasidiProg\Res\Лопушок.ico" Width="60" HorizontalAlignment="Left"></Image>
+                    <Button Background="#00CC76" Width="100" Height="40" HorizontalAlignment="Right" Margin="10" Content="Создать" Click="Button_Click_1"></Button>
+                    </Grid>
+                </StackPanel>
+                    
+
+            </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,41 @@
+﻿<Window x:Class="KaymasidiProg.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KaymasidiProg"
+        mc:Ignorable="d"
+        
+        Title="Лопушок" Height="450" Width="850" FontFamily="Gabriola" FontSize="20">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Background="#CEFFF9">
+
+                <TextBox Width="300" Margin="10" HorizontalAlignment="Center" Name="Text_box"></TextBox>
+                <ComboBox Width="200" Margin="10" HorizontalAlignment="Center" Name="ComBox_Sort" SelectionChanged="ComBox_Sort_SelectionChanged"></ComboBox>
+                <ComboBox Width="200" Margin="10" HorizontalAlignment="Center" Name="ComBox_Filt" ></ComboBox>
+                <Image Source="C:\Users\Administrator\source\repos\KaymasidiProg\KaymasidiProg\Res\Лопушок.ico" Width="80"></Image>
+
+            </StackPanel>
+            <ListView >
+                <Image Source="C:\Users\Administrator\source\repos\KaymasidiProg\KaymasidiProg\Res\picture.png" Width="10" Height="10">
+
+                </Image>
+            </ListView>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+
+                    <Button Background="#00CC76" Content="Добавление" Width="100" HorizontalAlignment="Left" Margin="10" Name="ButDelete" Click="ButDelete_Click">
+
+                    </Button>
+                    <Button Background="#00CC76" Content="Изменение" Width="100" HorizontalAlignment="Left" Margin="10" Name="ButChange">
+
+                    </Button>
+
+                    <Label Content="1 2 3 4" HorizontalAlignment="Right" Margin="10"/>
+
+                </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</Window>
